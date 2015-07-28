@@ -1,0 +1,116 @@
+# ---------------------------------------------------------------------
+# CertPolicy file contains parameters for the CMS functions 
+# ---------------------------------------------------------------------
+ 
+[DEFAULT]
+EntityType                    = User # [TCA,PolicyCA,HCA,LCA,SCA,User,Server]
+AltName                       = Top CA Server,Networking Division,SETECS Inc.,US # Must be given, if you selected AltName PKIX extensions
+KeyAlgorithm                  = RSA # [RSA, DSA]
+KeyLength                     = 1024 # [512, 768, 1024, 2048]
+CertificateValidPeriod        = 365 # [any number of days]
+PrivateKeyUsagePeriod         = 9990 # [any number of days]
+CRLUpdateInterval             = 30 # [any number of days - one month recommended]
+CRLHashAlgorithm              = SHA1 # [SHA1, MD2, MD5]
+CertRequestHashAlgorithm      = SHA1 # [SHA1, MD2, MD5]
+CertificateHashAlgorithm      = SHA1 # [SHA1, MD2, MD5]
+PublicKeyHashAlgorithm        = SHA1 # [SHA1, MD2, MD5]
+TunnelingAlgorithm            = DES-CBC # [DES-CBC, DES-CDMF] Must be given to create Tunneling SET extension
+NameConstraintsPermitted      = CA,Unit,SETECS,US,-#
+NameConstraintsExcluded       = CA,Unit,Company,US,-#
+AuthorityInfoAccessLocation1   = caIssuers;URI:http://192.168.0.2/
+AuthorityInfoAccessLocation2   = caIssuers;URI:http://192.168.0.2/
+AuthorityInfoAccessLocation3   = http://192.168.0.2/
+CRLDistributionPoint          = -,-,-,-,ldap://128.164.82.52:389
+ 
+# ---------------------------------------------------------------------
+# This section describes PKIX extensions, as described in Book 2, p 241.
+# By default KeyUsage extension is automaticaly set,  
+# but for the completeness all extentions are defined.  
+# Set values to '1/0' in order to create/remove extensions.  
+# ---------------------------------------------------------------------
+ 
+[PKIX_EXTENSIONS]
+AuthorityKeyIdentifier        = 1 # [1/0] -- not critical, not relevant for the TCA
+KeyUsage                      = 1 # [1/0] -- critical 
+PrivateKeyUsagePeriod         = 0 # [1/0] -- not critical, but required by SET 
+CertificatePolicies           = 1 # [1/0] -- critical 
+PolicyMappings                = 0 # [1/0] -- not critical 
+NameConstraints               = 1 # [1/0] -- critical 
+AuthorityInformationAccess    = 0 # [1/0] -- not critical 
+CRLDistributionPoint          = 1 # [1/0] -- not critical 
+# If the following two AltName extensions are set to 1,
+# you must give the AltName in the [DEFAULT] section 
+SubjectAltName                = 1 # [1/0] -- not critical 
+IssuerAltName                 = 1 # [1/0] -- not critical 
+BasicConstraints              = 1 # [1/0] -- critical
+ExtendedKeyUsage              = 1 # [1/0] -- 0:NO 1:Yes not critical 2:Yes and critical
+
+[PIV_EXTENSIONS]
+PIVinterim				= 2 # [1/0] -- 0:NO  1:Yes (Value is False) 2:Yes (Value is True)
+ 
+ 
+# ---------------------------------------------------------------------
+# This section describes PKIX CRL extensions  
+# ---------------------------------------------------------------------
+ 
+[CRL_EXTENSIONS]
+AuthorityKeyIdentifier        = 0 # [1/0] -- not critical
+CRLNumber                     = 1 # [1/0] -- not critical, but needed for SET to create BCI
+ 
+# ---------------------------------------------------------------------
+# This section describes SET private extentions   
+# By default all SET extensions are skipped,  
+# So you must set each of these extensions if you need it.  
+# Set values to '1/0' in order to create/remove extensions.  
+# ---------------------------------------------------------------------
+ 
+[SET_EXTENSIONS]
+HashedRootKey                 = 0 # [1/0] -- critical 
+CertificateType               = 0 # [1/0] -- critical
+
+# The following four extentions are not critical 
+MerchantData                  = 0 # [1/0] -- Not relevant for CAs, so set to '0' 
+CardCertRequired              = 0 # [1/0] -- Not relevant for CAs, so set to '0' 
+Tunneling                     = 0 # [1/0] -- Not relevant for CAs, so set to '0' 
+SetExtensions                 = 0 # [1/0] -- Whether SETExtention is specified
+ 
+# ---------------------------------------------------------------------
+# This section describes Merchant information    
+# If you set the merchantData extension, then this section must be filled.
+# ---------------------------------------------------------------------
+ 
+[MERCHANT]
+MerAuthFlag                   = - # Not relevant for CAs
+MerID                         = - # Not relevant for CAs 
+MerAcquirerBIN                = - # Not relevant for CAs 
+MerLanguage                   = - # Not relevant for CAs 
+MerName                       = - # Not relevant for CAs 
+MerCity                       = - # Not relevant for CAs 
+MerStateProvince              = - # Not relevant for CAs
+MerPostalCode                 = - # Not relevant for CAs 
+MerCountryName                = - # Not relevant for CAs 
+ 
+# ---------------------------------------------------------------------
+# This section describes Policy information  
+# If you set the CertificatePolicies extension, this section must be filled.
+# ---------------------------------------------------------------------
+ 
+[POLICY]
+PolicyOIDs                    = 2.16.840.1.101.3.1.48.1,2.16.840.1.101.2.1.12.1.1
+PolicyMappings                = 2.16.840.1.101.3.1.48.1,2.16.840.1.101.2.1.12.1.1
+PolicyQualifierID             = PKIPolicy # [TestPolicy, SETPolicy] 
+PolicyURLs                    = http://www.setecs.com/CertPolicy.htm # Cert Policy HTML file
+PolicyDigest                  = - # The digest of the Cert Policy HTML file
+AdditionalPolicyURL           = - # Additional Cert Policy
+PolicyEmail                   = - # E-mail of the Policy admin
+TerseStatement                = - # "Here comes description of cert usage"
+
+
+# ---------------------------------------------------------------------
+# This section describes ExtendedKeyUsage information  
+# If you set the ExtendedKeyUsage extension, this section must be filled.
+# ---------------------------------------------------------------------
+[EXKEYUSE]
+exKeyUsage                    = 2.16.840.1.101.3.6.7
+
+

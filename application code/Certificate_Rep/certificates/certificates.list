@@ -1,0 +1,269 @@
+----------------------------------------------------------------------
+
+Version..................... : X509 V3
+Serial Number............... : 8000000d
+Signature Algorithm......... : sha1WithRSAEncryption
+
+ISSUER :
+   Country.................. : US
+   State or province........ : D.C.
+   Locality................. : Washington
+   Organization............. : GWU
+   Organization Unit........ : SEAS
+   Common name.............. : OneNETServer35
+   Email address............ : 
+   URL address.............. : 128.164.82.35
+
+SUBJECT :
+   Country.................. : US
+   State or province........ : D.C.
+   Locality................. : Washington
+   Organization............. : GWU
+   Organization Unit........ : SEAS
+   Common name.............. : OneNETServer35
+   Email address............ : 
+   URL address.............. : 128.164.82.35
+
+Valid from.................. : 2008/3/21
+Valid to.................... : 2009/3/22
+
+PublicKey algorithm......... : rsaEncryption
+
+EXTENSIONS :
+   Key Usage................ : DigitalSignature,KeyCertSignature,CRLSignature
+   Policy................... : 
+      Policy OID............ : 2.16.840.1.101.3.1.48.1
+      Policy qulifier OIDs.. : PKIPolicy
+      CPS URL............... : http://www.setecs.com/CertPolicy.htm
+      Policy OID............ : 2.16.840.1.101.2.1.12.1.1
+      Policy qulifier OIDs.. : PKIPolicy
+      CPS URL............... : http://www.setecs.com/CertPolicy.htm
+   **** PIV interim......... : True
+   Tunneling................ : NotFound
+   Subject alt name......... : Top CA Server,Networking Division,SETECS Inc.,US
+   Issuer alt name.......... : Top CA Server,Networking Division,SETECS Inc.,US
+   Private key usage period  : NotFound
+   Merchant data............ : NotFound
+   CardCertRequired......... : NotFound
+   CA Entity type........... : NotFound
+   HashRootKey.............. : NotFound
+   AuthorityKeyIdentifier... : NotFound
+   AuthorityInfoAccess...... : 
+   CRL distribution point... : url=ldap://128.164.82.52:389
+   Basic constraints........ : Subject type=End Entity,Path length=-1
+   Name constraints......... : NotFound
+   Policy mappings.......... : NotFound
+
+SIGNATURE :
+7D 6C 91 4D 95 77 14 ED 69 83 D1 6D 6D 1E 1B 0C 
+65 7D EF 37 A1 76 3F 25 22 CC 0C D7 40 AF 4B A0 
+0B 1C 0D BA 6F 72 B4 6D 89 36 E8 A5 E2 9E 19 27 
+00 56 7B BE C4 06 C7 32 6B BC C8 DD AA CE C8 C9 
+E3 9E 15 0A 04 63 12 46 2B E1 C8 F6 A2 22 4E BA 
+14 6E 09 57 FC 37 91 8A 04 23 83 18 1B 84 30 72 
+28 97 6A 04 B7 05 D7 22 AD 85 63 C4 20 EF 18 64 
+4F DE 08 6B 24 F4 54 32 90 22 7F 85 D2 C8 92 2C 
+
+----------------------------------------------------------------------
+
+Version..................... : X509 V3
+Serial Number............... : 4b
+Signature Algorithm......... : sha1WithRSAEncryption
+
+ISSUER :
+   Country.................. : US
+   State or province........ : D.C.
+   Locality................. : Washington
+   Organization............. : GWU
+   Organization Unit........ : SEAS
+   Common name.............. : OneNETServer35
+   Email address............ : 
+   URL address.............. : 128.164.82.35
+
+SUBJECT :
+   Country.................. : US
+   State or province........ : D.C.
+   Locality................. : Washington
+   Organization............. : GWU
+   Organization Unit........ : SEAS
+   Common name.............. : Admin3
+   Email address............ : 
+   URL address.............. : 
+
+Valid from.................. : 2008/3/21
+Valid to.................... : 2009/3/22
+
+PublicKey algorithm......... : rsaEncryption
+
+EXTENSIONS :
+   Key Usage................ : DigitalSignature,KeyEncipherment,DataEncipherment
+   Policy................... : 
+      Policy OID............ : 2.16.840.1.101.3.1.48.1
+      Policy qulifier OIDs.. : PKIPolicy
+      CPS URL............... : http://www.setecs.com/CertPolicy.htm
+      Policy OID............ : 2.16.840.1.101.2.1.12.1.1
+      Policy qulifier OIDs.. : PKIPolicy
+      CPS URL............... : http://www.setecs.com/CertPolicy.htm
+   **** PIV interim......... : True
+   Tunneling................ : NotFound
+   Subject alt name......... : Top CA Server,Networking Division,SETECS Inc.,US
+   Issuer alt name.......... : Top CA Server,Networking Division,SETECS Inc.,US
+   Private key usage period  : NotFound
+   Merchant data............ : NotFound
+   CardCertRequired......... : NotFound
+   CA Entity type........... : NotFound
+   HashRootKey.............. : NotFound
+   AuthorityKeyIdentifier... : 
+      Certificate issuer.... : OneNETServer35,SEAS,GWU,US,128.164.82.35
+      Serial number......... : 80000005
+   AuthorityInfoAccess...... : 
+   CRL distribution point... : url=ldap://128.164.82.52:389
+   Basic constraints........ : Subject type=End Entity,Path length=-1
+   Name constraints......... : NotFound
+   Policy mappings.......... : NotFound
+
+SIGNATURE :
+82 D8 06 36 77 88 45 8C 71 03 49 50 55 21 1F 32 
+16 FD 32 2A BD B3 99 69 D5 57 28 3A D1 4E 79 45 
+CC 28 70 91 EA 66 58 2F 86 18 C5 B2 2D 99 83 6B 
+35 A6 1F A1 CA 54 FA 78 D3 B1 68 42 CD 25 CA AE 
+3E 0C B4 15 31 DB 76 62 D5 3E 6B CC DB 72 5F 4C 
+77 A8 03 42 2F CF 1D B3 8A B9 DD 5F 74 96 D8 58 
+AC BF 31 01 4C 16 ED 73 10 C0 31 89 07 58 84 8C 
+5F 32 EE CD 0F 21 BE DB 76 7D 87 C8 29 E7 46 9D 
+
+----------------------------------------------------------------------
+
+Version..................... : X509 V3
+Serial Number............... : 80000005
+Signature Algorithm......... : sha1WithRSAEncryption
+
+ISSUER :
+   Country.................. : US
+   State or province........ : D.C.
+   Locality................. : Washington
+   Organization............. : GWU
+   Organization Unit........ : SEAS
+   Common name.............. : OneNETServer35
+   Email address............ : 
+   URL address.............. : 128.164.82.35
+
+SUBJECT :
+   Country.................. : US
+   State or province........ : D.C.
+   Locality................. : Washington
+   Organization............. : GWU
+   Organization Unit........ : SEAS
+   Common name.............. : OneNETServer35
+   Email address............ : 
+   URL address.............. : 128.164.82.35
+
+Valid from.................. : 2008/2/3
+Valid to.................... : 2009/2/3
+
+PublicKey algorithm......... : rsaEncryption
+
+EXTENSIONS :
+   Key Usage................ : KeyCertSignature,CRLSignature
+   Policy................... : 
+      Policy OID............ : 2.16.840.1.101.3.1.48.1
+      Policy qulifier OIDs.. : PKIPolicy
+      CPS URL............... : http://www.setecs.com/CertPolicy.htm
+      Policy OID............ : 2.16.840.1.101.2.1.12.1.1
+      Policy qulifier OIDs.. : PKIPolicy
+      CPS URL............... : http://www.setecs.com/CertPolicy.htm
+   **** PIV interim......... : True
+   Tunneling................ : NotFound
+   Subject alt name......... : Top CA Server,Networking Division,SETECS Inc.,US
+   Issuer alt name.......... : Top CA Server,Networking Division,SETECS Inc.,US
+   Private key usage period  : NotFound
+   Merchant data............ : NotFound
+   CardCertRequired......... : NotFound
+   CA Entity type........... : NotFound
+   HashRootKey.............. : NotFound
+   AuthorityKeyIdentifier... : NotFound
+   AuthorityInfoAccess...... : 
+   CRL distribution point... : url=ldap://128.164.82.52:389
+   Basic constraints........ : Subject type=End Entity,Path length=-1
+   Name constraints......... : NotFound
+   Policy mappings.......... : NotFound
+
+SIGNATURE :
+24 F1 59 DD 2F 43 18 71 A4 46 DE D8 37 D0 D9 0C 
+8C 63 DF 16 3D 08 F6 34 91 8C 63 7B A9 8D 04 26 
+26 24 BF 08 E5 A1 BF 35 34 51 FD 66 84 62 43 A1 
+9D 95 E0 DA CF 85 7D 48 AE 61 AE 3A E0 92 8D 4C 
+9D CB 48 6A DD 14 59 35 00 D0 04 85 3E 8E C1 A6 
+76 F3 59 54 5E 57 01 B3 7F E6 B7 D7 D4 BA 1C AE 
+7E 53 C3 B1 C3 33 45 40 68 61 D9 8D 37 D6 B6 6A 
+68 40 A4 3A D2 AF 35 D2 4D 22 7E 6B AB 50 AB A9 
+
+----------------------------------------------------------------------
+
+Version..................... : X509 V3
+Serial Number............... : 4a
+Signature Algorithm......... : sha1WithRSAEncryption
+
+ISSUER :
+   Country.................. : US
+   State or province........ : D.C.
+   Locality................. : Washington
+   Organization............. : GWU
+   Organization Unit........ : SEAS
+   Common name.............. : OneNETServer35
+   Email address............ : 
+   URL address.............. : 128.164.82.35
+
+SUBJECT :
+   Country.................. : US
+   State or province........ : D.C.
+   Locality................. : Washington
+   Organization............. : GWU
+   Organization Unit........ : SEAS
+   Common name.............. : Admin2
+   Email address............ : 
+   URL address.............. : 
+
+Valid from.................. : 2008/3/21
+Valid to.................... : 2009/3/22
+
+PublicKey algorithm......... : rsaEncryption
+
+EXTENSIONS :
+   Key Usage................ : DigitalSignature,KeyEncipherment,DataEncipherment
+   Policy................... : 
+      Policy OID............ : 2.16.840.1.101.3.1.48.1
+      Policy qulifier OIDs.. : PKIPolicy
+      CPS URL............... : http://www.setecs.com/CertPolicy.htm
+      Policy OID............ : 2.16.840.1.101.2.1.12.1.1
+      Policy qulifier OIDs.. : PKIPolicy
+      CPS URL............... : http://www.setecs.com/CertPolicy.htm
+   **** PIV interim......... : True
+   Tunneling................ : NotFound
+   Subject alt name......... : Top CA Server,Networking Division,SETECS Inc.,US
+   Issuer alt name.......... : Top CA Server,Networking Division,SETECS Inc.,US
+   Private key usage period  : NotFound
+   Merchant data............ : NotFound
+   CardCertRequired......... : NotFound
+   CA Entity type........... : NotFound
+   HashRootKey.............. : NotFound
+   AuthorityKeyIdentifier... : 
+      Certificate issuer.... : OneNETServer35,SEAS,GWU,US,128.164.82.35
+      Serial number......... : 80000005
+   AuthorityInfoAccess...... : 
+   CRL distribution point... : url=ldap://128.164.82.52:389
+   Basic constraints........ : Subject type=End Entity,Path length=-1
+   Name constraints......... : NotFound
+   Policy mappings.......... : NotFound
+
+SIGNATURE :
+20 6E B0 C3 A2 B0 40 69 61 27 24 D3 EB C1 4C 17 
+83 C5 54 E6 40 2D 1C F0 06 CF B6 D2 62 D4 82 0A 
+2B 92 0F 9A 65 8D 62 A9 FF 35 A2 9E ED 49 6D 56 
+6F 69 21 2B 20 50 A0 A9 2D 29 28 BD B4 F8 FB 96 
+8F E7 D6 FA 85 A6 A3 B1 D4 31 DC 5C EA 80 19 57 
+46 7C 55 C3 78 53 4D 0F 14 BD 4E 93 33 A4 AA 6A 
+83 1A 58 BC 7C B2 D3 61 73 DB 4C 0A 67 7B DA 40 
+53 74 1F B9 10 40 5E 52 99 F2 3E 21 63 E5 CE 9B 
+
+----------------------------------------------------------------------

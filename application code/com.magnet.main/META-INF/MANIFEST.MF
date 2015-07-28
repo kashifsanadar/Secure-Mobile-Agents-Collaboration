@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Main Plug-in
+Bundle-SymbolicName: com.magnet.main;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: com.magnet.main.Activator
+Bundle-Vendor: MagNet
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.setecs.onesdk.ui,
+ com.setecs.onesdk.core,
+ com.magnet.securecollaboration,
+ com.magnet.ui,
+ com.setecs.onesdk.crypto,
+ com.setecs.onesdk.engines,
+ com.magnet.workstation
+Eclipse-LazyStart: true

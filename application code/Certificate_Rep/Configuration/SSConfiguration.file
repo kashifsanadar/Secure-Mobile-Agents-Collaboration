@@ -1,0 +1,36 @@
+# -------------------------------------------------------------
+#    Security System Configuration File 
+# -------------------------------------------------------------
+# 
+# --- Identification Parameters -------------------------------
+DomainName = CSPRI
+# 
+# --- Security DB Parameters ----------------------------------
+SecurityDB_URL = jdbc:mysql://128.164.82.51:3306/
+SecurityDB_Driver = org.gjt.mm.mysql.Driver
+SecurityDB_EncryptedPassword = 8E4G86j11HMQ2agX5vYjA1fT0FkPRZFv
+# 
+# --- PKI Parameters ------------------------------------------
+TCAServer_IPnumber = 128.164.82.35
+PCAServer_IPnumber = 128.164.82.35
+HCAServer_IPnumber = 128.164.82.35
+LCAServer_IPnumber = 128.164.82.35
+# 
+# --- Certificates Directory Parameters -----------------------
+certDir_IPnumber = 
+certDir_Port = 389
+certDir_UserName = 
+certDir_UserPassword = 
+certDir_TopObject = O=Top
+# 
+# --- CRL Directory Parameters --------------------------------
+crlDir_IPnumber = 
+crlDir_Port = 389
+crlDir_UserName = 
+crlDir_UserPassword = 
+crlDir_TopObject = O=Top
+# 
+# --- Background Servers Parameters ---------------------------
+WebServer_IPnumber = 
+WebServer_Port = 
+MCServer_IPnumber = 

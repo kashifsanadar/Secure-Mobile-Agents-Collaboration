@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         id="MagNet"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.magnet.main.MagNetMain">
+         </run>
+       </application>
+   </extension>
+   <extension
+         id="MagNet"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="com.magnet.main.MagNet"
+            name="MagNet">
+         <property
+               name="windowImages"
+               value="platform:/plugin/com.setecs.onesec/resource/graphics/icons/16x16/logo16x16.gif,platform:/plugin/com.setecs.onesec/resource/graphics/icons/32x32/">
+         </property>
+         <property
+               name="aboutText"
+               value="SETECS Inc.&#x0A;Internet Security Technologies&#x0A;&#x0A;(c) Copyright SETECS, inc.&#x0A;All rights reserved.&#x0A;&#x0A;SETECS, Inc.&#x0A;Maryland, USA&#x0A;http://www.setecs.com">
+         </property>
+         <property
+               name="aboutImage"
+               value="platform:/plugin/com.setecs.onesec/resource/graphics/images/about.gif">
+         </property>
+         <property
+               name="appName"
+               value="MagNet">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.splashHandlers">
+      <splashHandler
+            class="com.magnet.main.splashHandlers.InteractiveSplashHandler"
+            id="com.magnet.main.splashHandlers.interactive">
+      </splashHandler>
+      <splashHandlerProductBinding
+            productId="com.magnet.main.MagNet"
+            splashId="com.magnet.main.splashHandlers.interactive">
+      </splashHandlerProductBinding>
+   </extension>
+   <extension
+         point="com.setecs.onesdk.ui.environmentConfiguration">
+      <systemMenuConfig
+            class="com.magnet.main.MagNetSystemConfiguration">
+      </systemMenuConfig>
+      <startupConfig
+            class="com.magnet.main.MagNetSystemConfiguration">
+      </startupConfig>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="com.magnet.main.MainMagNetPerspective"
+            id="com.botnet.main.MainMagNetPerspective"
+            name="MagNet Perspective">
+      </perspective>
+   </extension>
+
+</plugin>

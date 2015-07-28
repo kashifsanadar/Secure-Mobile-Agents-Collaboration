@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.3"?>
+<plugin>
+   <extension
+         point="com.setecs.onesdk.ui.application">
+      <application
+            class="com.magnet.securecollaboration.SecureCollaborationMain"
+            id="SecureCollaboration">
+      </application>
+   </extension>
+</plugin>
